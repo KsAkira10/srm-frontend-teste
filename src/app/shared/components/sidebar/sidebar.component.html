@@ -1,0 +1,13 @@
+<div class="logo">
+  <input type="search" name="inputSearch" id="inputSearch" placeholder="pesquise aqui ..." class="form-control" style="margin-top:34px;">
+</div>
+<div class="sidebar-wrapper">
+  <ul class="nav nc-icon-ul">
+    <li routerLinkActive="active" *ngFor="let route of routes">
+      <a [routerLink]="route.routerLink">
+        <i class="nc-icon x3" [ngClass]="getIcon(route.routerLink)"></i>
+        <p>{{route.alias}}</p>
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,47 @@
+{
+    "menus": [
+        {
+            "routerLink": "management-panel",
+            "alias": "Painel de Gestão"
+        },
+        {
+            "routerLink": "digital-account",
+            "alias": "Conta Digital"
+        },
+        {
+            "routerLink": "advance-payment",
+            "alias": "Ant. de Recebíveis"
+        }
+    ],
+    "alerts": [
+        {
+            "description": "23 Notas Canceladas"
+        },
+        {
+            "description": "13 Notas Canceladas",
+            "actions": [
+                {
+                    "description": "Ver",
+                    "event": "SHOW"
+                },
+                {
+                    "description": "Editar",
+                    "event": "EDIT"
+                }
+            ]
+        },
+        {
+            "description": "7 Assinaturas Digital",
+            "actions": [
+                {
+                    "description": "Ver",
+                    "event": "SHOW"
+                },
+                {
+                    "description": "Editar",
+                    "event": "EDIT"
+                }
+            ]
+        }
+    ]
+}

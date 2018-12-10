@@ -1,0 +1,68 @@
+<p>
+  <span><a routerLink="/">Página Inicial</a></span><span> > </span><span>Painel de Gestão</span>
+</p>
+<h1 class="mt-3">
+  <i class="nc-icon lg nc-management-panel"></i><span class="m-3">Painel de Gestão</span>
+</h1>
+<section class="my-4 mx-2">
+  <div class="row">
+    <div class="col-8">
+      <app-card [config]="{title: 'Atalhos'}">
+        <section class="row">
+          <div class="col-7">
+            <p class="card-category">Operacional</p>
+            <div class="row">
+              <div class="col-6">
+                <button class="btn btn-outline-primary btn-block">Envio</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-outline-primary btn-block">Assinatura</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <button class="btn btn-outline-primary btn-block">Envio de Duplicatas</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-outline-primary btn-block">Assinatura Digital</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <button class="btn btn-outline-primary btn-block">Nova Operação</button>
+              </div>
+              <div class="col-6"></div>
+            </div>
+          </div>
+          <div class="col-5">
+            <p class="card-category">Geral</p>
+            <div class="row">
+              <div class="col-12"><button class="btn btn-outline-primary btn-block">Carteira</button></div>
+              <div class="col-12"><button class="btn btn-outline-primary btn-block">Instruções</button></div>
+            </div>
+          </div>
+        </section>
+      </app-card>
+    </div>
+    <div class="col-4">
+      <app-card [config]="{title: 'Alertas', category: 'Últimos 5 dias'}">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item justify-content-between" *ngFor="let alert of alerts">
+            <span class="mr-4">{{alert.description}}</span>
+            <span class="btn-group ml-5" *ngIf="alert.actions && alert.actions.length > 0">
+              <button class="btn btn-outline-primary dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Ações
+              </button>
+              <div class="dropdown-menu" *ngIf="alert.actions && alert.actions.length > 0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" *ngFor="let action of alert.actions">{{action.description}}</li>
+                </ul>
+              </div>
+            </span>
+          </li>
+        </ul>
+      </app-card>
+    </div>
+  </div>
+</section>
