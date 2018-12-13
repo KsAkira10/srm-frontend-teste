@@ -1,27 +1,29 @@
 # SrmFrontendTeste
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+1. clonar o repositório
+2. executar o comando:
+``` sh
+    npm install
+```
+Para executar o ambiente de desenvolvimento:
+- Executar o seguinte comando:
+``` sh
+    npm start
+```
 
-## Development server
+O projeto atende as demandas solicitadas no arquivo:
+``` path
+    ./Teste Técnico para a vaga de Front.pdf
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O projeto está seguindo a estrutura do Angular na versão 7:
+- No escopo, estava solicitando o Angular 5, porém, como não tem nenhum impacto no desenvolvimento, optei por utilizar a ultima versão.
 
-## Code scaffolding
+- HTML e CSS, está dentro da pasta ./src.
+No caso, optei por usar um pre-processador (SASS/SCSS)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- o arquivo Db.json contêm informações do Menu Lateral e botões ações, como não foi definido, o que deveria ter no botão Ações,
+eu preenchi com algumas informações.
 
-## Build
+- Ao rodar o comando npm start, subira o servidor do Mock e o Servidor local, na url http://localhost:4200/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

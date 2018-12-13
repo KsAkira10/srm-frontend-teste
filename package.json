@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "serve": "ng serve --proxy-config proxy.config.json",
+    "serve": "ng serve -o --proxy-config proxy.config.json",
     "serve:mock": "npx json-server --watch db.json --routes routes.json"
   },
   "private": true,
